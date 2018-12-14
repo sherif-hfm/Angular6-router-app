@@ -1,0 +1,14 @@
+<p>
+  user works! user Id:{{userId}}
+</p>
+<p>
+  <a routerLink='/users/2' class="w3-button w3-mobile w3-blue"  >Goto User2</a>   <!-- this will not change the value of userId because userId set in ngOnInit -->  
+</p>
+
+<p>
+  <a [routerLink]="['/users','3']" [queryParams]="{Mode:'Edit',Status:'True'}" fragment="loading" class="w3-button w3-mobile w3-blue"  >Goto User3</a>   
+</p>
+
+<p>
+  <button class="w3-button w3-mobile w3-blue" (click)="onclock()">goto user4</button>
+</p>
